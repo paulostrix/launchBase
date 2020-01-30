@@ -3,6 +3,7 @@
 
 :root{
     --color-green: #50fa7b
+    --color-roxo: #7159c1
 }
 *{
     margin:0px;
@@ -78,4 +79,64 @@ header{
 
 #links-footer a{
     text-decoration: underline;
+}
+
+.cards{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10,auto);
+    gap: 8px;
+}
+
+.card{
+    width: 100%;
+    background-color: #7203c1;
+    padding:  0 2px;
+    transition: 300ms;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover{
+    margin: 0 40px 0 40px;
+    transform: scale(1.2);
+    gap:30px
+}
+.card_img_container img{
+    width: 100%;
+}
+
+.card_content,
+.card_info{
+    padding: 24px;
+}
+
+.card_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price{
+    background-color: #7203c1;
+    filter: brightness(120%);
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+section a{
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(0, 0,0);
+    width: 80px;
+    padding: 20px;
+    font-size: 6vmax;
+    text-align: center;
+    z-index: 1;
+}
+
+html{
+    scroll-behavior: smooth;
 }
